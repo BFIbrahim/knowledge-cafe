@@ -11,7 +11,7 @@ function App() {
     <>
       <Navigation></Navigation>
 
-      <div className='md:flex mt-5'>
+      <div className='md:flex mt-5 gap-10'>
         <Blog></Blog>
         <Bookmarks></Bookmarks>
       </div>

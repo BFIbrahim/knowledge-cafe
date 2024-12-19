@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SingleBlog from "../SingleBlog/SingleBlog";
 
 const Blog = () => {
 
@@ -11,7 +12,12 @@ const Blog = () => {
 
     return (
         <div className="md:w-2/3">
-            Hello
+            {
+                blogs.map(blog => <SingleBlog
+                    key={blog.id}
+                    blog={blog}
+                ></SingleBlog>)
+            }
         </div>
     );
 };
